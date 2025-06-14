@@ -32,8 +32,8 @@ jobs:
       with:
         dockerfile: Dockerfile
 
-    # - name: Build the Docker image
-    #   run: docker build . --file Dockerfile.cpu-only
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile
     
     
       
