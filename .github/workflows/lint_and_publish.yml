@@ -3,7 +3,7 @@ name: Lint code and publish Docker image
 on:
   push:
     paths:
-      # - .github/workflows/lint_and_publish.yml
+      - .github/workflows/lint_and_publish.yml
       - src/bgremover/bgremover.py
       - Dockerfile
   workflow_dispatch:
