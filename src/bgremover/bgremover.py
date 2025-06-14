@@ -144,7 +144,8 @@ with st.sidebar.expander("ℹ️ Image Guidelines"):
 if my_upload is not None:
     if my_upload.size > MAX_FILE_SIZE:
         st.error(f"The uploaded file is too large."
-                 f"Please upload an image smaller than {MAX_FILE_SIZE/1024/1024:.1f}MB.")
+                 f"Please upload an image smaller"
+                 f"than {MAX_FILE_SIZE/1024/1024:.1f}MB.")
     else:
         fix_image(upload=my_upload)
 else:
